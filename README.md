@@ -19,38 +19,50 @@
 ![415284160-cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc](https://github.com/user-attachments/assets/050df1ed-a8d2-438e-b891-9ec87e12a31c)
 
 # DAY 2- Good floorplan vs bad floorplan and introduction to library cells
-CHIP FLOOR PLANNING CONSIDERATION
+![1000013490](https://github.com/user-attachments/assets/d471fe0f-8377-4840-85e3-da51cfbefcd9)
+![1000013491](https://github.com/user-attachments/assets/79011030-e1b0-41bb-9730-9d58d6de3037)
+![1000013492](https://github.com/user-attachments/assets/bd2e8d99-0f07-44ab-85d9-cda0b26496b7)
+![1000013493](https://github.com/user-attachments/assets/eb57f139-6c95-4b43-b02a-59be120fb927)
 
-UTILIZATION FACTOR AND ASPECT RATIO
+_UTILIZATION FACTOR AND ASPECT RATIO_
 In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas. formula is given by:
 
-Utilization Factor = area occupied by the netlist / Total area occupied by the core
+•Utilization Factor = area occupied by the netlist / Total area occupied by the core
 
---> If the utilization factor is 1 then it denotes 100 % utilization. --> We never go for 100 % utilization, we go for 50 % or 60 % factor.
+-If the utilization factor is 1 then it denotes 100 % utilization. --> We never go for 100 % utilization, we go for 50 % or 60 % factor.
 
-Aspect Ratio = height of the core / width of the core
+•Aspect Ratio = height of the core / width of the core
 
---> When aspect ratio is 1 , then its a square chip.
+-When aspect ratio is 1 , then its a square chip.
 
-STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES
-Once synthesis is sucessful,next step is floorplan. we use command
+Once synthesis is sucessful,next step is floorplan. we use command:
+    run_floorplan
+    
+This will create a folder inside runs folder of picorv32a directory. It will take a while to execute and once done we will get PDN GENERATION IS SUCESSFUL as shown in below image. 
+![1000013494](https://github.com/user-attachments/assets/04659d29-4e4b-4b5d-86a1-5a512d844bc7)
+![1000013495](https://github.com/user-attachments/assets/41a0f228-1690-4035-b48e-e58cf437ced5)
 
-run_floorplan
-This will create a folder inside runs folder of picorv32a directory. it will take a while to execute.once done we will get PDN GENERATION IS SUCESSFUL as shown in below image. To see the actual layout after the floorplan ,go the folders as shown below:
+To see the actual layout after the floorplan ,go the folders as shown below:
+![1000013497](https://github.com/user-attachments/assets/16709bf0-44f3-44e8-8721-987e1d3074c6)
 
-openlane/designs/picorv32a/runs/08-02_06-43/results/floorplan
+• openlane/designs/picorv32a/runs/08-02_06-43/results/floorplan
+
 now we need to open the magic file by the following command
 
-magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+• magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+![1000013499](https://github.com/user-attachments/assets/9976b0b6-2746-42a5-8336-67c8e200a6e9)
+![1000013500](https://github.com/user-attachments/assets/e2cea230-ad72-4b96-9240-f3896b11dcc0)
+![1000013502](https://github.com/user-attachments/assets/5c0613ad-1264-44ec-84bc-93f3b7d11cc6)
 
+Once the Floorplanning is done sucessfully , the next step in the process is Placement. To run the placement use the command:
+     run_placement 
+     
+![1000013503](https://github.com/user-attachments/assets/4d245e9e-bbf5-47bf-bbbe-ee9a7c31242a)
 
-
-
-Once the Floorplanning is done sucessfully , the next step in the process is Placement. To run the placement use the command
-
-run_placement
 Once Placement process is done , next step is to check whether the cells are placed correctly or not.by using magic tool.
 
-use the below command to view the standerd cells placement. image is shown below
+The command to view the standerd cells placement. image is shown below:
 
-magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+• magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+![1000013504](https://github.com/user-attachments/assets/a66a556e-481c-41a1-afc0-28b7e066197c)
+
