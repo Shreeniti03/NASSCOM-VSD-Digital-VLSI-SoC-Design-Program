@@ -1,10 +1,11 @@
 # NASSCOM-VSD-Digital-VLSI-SoC-Design-Program
 # Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK
--How to talk to computers.
+°How to talk to computers.
 
--SoC design and openLANE
+°SoC design and openLANE
 
--get familiar to open source EDA tools 
+°get familiar to open source EDA tools 
+
 ●VLSI technology is crucial for integrating numerous tiny transistors onto chips, making electronics faster, smaller, and more cost-effective.
 
 ●The Arduino board relies on a microcontroller unit (MCU) to perform essential tasks like reading sensors and controlling lights.
@@ -19,13 +20,20 @@
 ![415284160-cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc](https://github.com/user-attachments/assets/050df1ed-a8d2-438e-b891-9ec87e12a31c)
 
 # DAY 2- Good floorplan vs bad floorplan and introduction to library cells
+
+°Chip Floorplanning Considerations
+°Library winding and placement
+°Cell design and characterization flows
+°General timing characterization parameters
+
 ![1000013490](https://github.com/user-attachments/assets/d471fe0f-8377-4840-85e3-da51cfbefcd9)
 ![1000013491](https://github.com/user-attachments/assets/79011030-e1b0-41bb-9730-9d58d6de3037)
 ![1000013492](https://github.com/user-attachments/assets/bd2e8d99-0f07-44ab-85d9-cda0b26496b7)
 ![1000013493](https://github.com/user-attachments/assets/eb57f139-6c95-4b43-b02a-59be120fb927)
 
-_UTILIZATION FACTOR AND ASPECT RATIO_
-In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas. formula is given by:
+**UTILIZATION FACTOR AND ASPECT RATIO**
+
+In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas. Formula is given by:
 
 •Utilization Factor = area occupied by the netlist / Total area occupied by the core
 
@@ -65,4 +73,22 @@ The command to view the standerd cells placement. image is shown below:
 
 • magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ![1000013504](https://github.com/user-attachments/assets/a66a556e-481c-41a1-afc0-28b7e066197c)
+![de13d2ee8d7e09a155319010cd7ff4a897e730d316964b462793586e51710da6~2](https://github.com/user-attachments/assets/76d93afa-a4e4-4a12-960b-08a2a75e5977)
+![1000013617](https://github.com/user-attachments/assets/8765979e-8f27-4623-89bd-007ad4911fe7)
+
+# Day 3 - Design library cell using Magic layout and ngspice characterization
+
+Commands to open inverter layout in magic:
+
+![1000013508](https://github.com/user-attachments/assets/0a0aeaa4-8a57-476e-a9b4-db0c4efe082d)
+CMOS inverter layout 
+![1000013509](https://github.com/user-attachments/assets/80d85222-759a-4646-bd69-be4898511be6)
+NMOS 
+![1000013510](https://github.com/user-attachments/assets/43273864-9ae3-4210-be83-f4e59e0c728c)
+PMOS 
+![1000013511](https://github.com/user-attachments/assets/c1cb2016-2511-404f-bfa6-20ccab999647)
+Output 
+![1000013512](https://github.com/user-attachments/assets/40d3d94a-f3e2-40a7-8930-53d925dc90f9)
+
+
 
