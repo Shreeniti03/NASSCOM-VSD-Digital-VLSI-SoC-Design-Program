@@ -18,7 +18,8 @@
 ●The Sky130_fd_sc_hd variant from SkyWater foundry provides necessary technology files for chip design, with tools like OPENLANE requiring specific commands for design processes.
 ![411302519-3759afb9-445a-4140-832a-3ae61331d831](https://github.com/user-attachments/assets/08370fd4-78a3-4213-9b5e-46ec560fafd7)
 ![411303043-311a83b9-1db0-4206-b8f2-ff87eb4b17fa](https://github.com/user-attachments/assets/5a019dbf-5e0d-4372-b726-45c6ec3e4072)
-![415284160-cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc](https://github.com/user-attachments/assets/050df1ed-a8d2-438e-b891-9ec87e12a31c)
+![1000013744](https://github.com/user-attachments/assets/94ab0146-6494-44bc-a81a-88cce2e42403)
+
 
 # DAY 2: Good floorplan vs bad floorplan and introduction to library cells
 
