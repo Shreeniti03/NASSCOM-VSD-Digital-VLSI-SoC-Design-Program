@@ -176,6 +176,7 @@ re-Placement
 ![1000013679](https://github.com/user-attachments/assets/7d41a874-d92f-4121-96a3-e10e3a3b947b)
 ![1000013680](https://github.com/user-attachments/assets/f87f4d08-6eaf-4061-a13a-8dbe4a8150c9)
 •To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 ```  Commands to load PDN def in magic in another terminal
 
@@ -185,5 +186,4 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
   #Command to load the PDN def in magic tool
   magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
-
 
