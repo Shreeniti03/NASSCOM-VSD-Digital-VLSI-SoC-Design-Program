@@ -200,21 +200,25 @@ Fast route guide present in openlane/designs/picorv32a/runs/16-02_07-04/tmp/rout
 **Detailed routing using Triton-route**
 
 The current def file should be in pdn stage and set the ROUTING_STRATEGY should be 0 and then run the command run_routing.
-![1000013699](https://github.com/user-attachments/assets/18d97f1a-981a-4749-b52c-a66f4a2db299)
-![1000013687](https://github.com/user-attachments/assets/60bb8c07-968e-45ca-991a-d33295203395)
+![1000013723](https://github.com/user-attachments/assets/8f4dc156-a4f5-4bff-8371-9d39d7e1c0a3)
+![1000013687](https://github.com/user-attachments/assets/f1052aef-e1d8-4cb4-80f1-3d52bab8b9a8)
 
 The spef file is extracted using following command shown below :
-![1000013700](https://github.com/user-attachments/assets/a7a99aaf-3d78-4632-a72d-3f204ffad8a4)
-![1000013701](https://github.com/user-attachments/assets/be050ec8-60c6-4ae4-8c75-16c867b5b787)
+![1000013724](https://github.com/user-attachments/assets/70282dac-d008-4a42-9493-7dd9b21d5d73)
+![1000013728](https://github.com/user-attachments/assets/7381b04c-03e9-4cf0-a86e-94c16baa50da)
+
 
 **Post-route STA analysis**
 
 Commands used to get min/max slacks for hold and setup analysis:
-![1000013702](https://github.com/user-attachments/assets/d0c8e972-4714-4635-9e42-8d31eb7733fd)
+![1000013729](https://github.com/user-attachments/assets/16ce5fad-0819-40e7-be8d-4334cf5c2559)
+
 
 • Hold slack is Met
-![1000013703](https://github.com/user-attachments/assets/a39065bf-72f5-4aae-bce6-3db78704f787)
+![1000013730](https://github.com/user-attachments/assets/8ec12859-fe95-4c38-8490-073b80d27f26)
+
 
 • Setup slack is Met
-![1000013704](https://github.com/user-attachments/assets/73563b2f-bf8f-4543-a511-77f75f8e4f4b)
+![1000013731](https://github.com/user-attachments/assets/582b9726-6600-4669-b09d-c05d5b339c81)
+
 
