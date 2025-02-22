@@ -179,4 +179,42 @@ re-Placement
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 
+![1000013681](https://github.com/user-attachments/assets/6151356d-8a9d-490e-b8a1-85996f71b29c)
+![1000013682](https://github.com/user-attachments/assets/731577e2-d0a2-4e19-bad2-cf728bfbd751)
+
+Final step is routing to run routing use below command :
+     run_routing
+![1000013680](https://github.com/user-attachments/assets/2a684f67-09dc-4ab6-b012-f8fa5e79947e)
+
+To view the final design with routing in Magic tool , go to the results/routing/ in the runs folder of openlane directory by using below command :
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
+
+![1000013683](https://github.com/user-attachments/assets/7cbb875b-10ae-483f-abdf-4ac75ef3a162)
+The power distribution network layout is shown below
+![1000013693](https://github.com/user-attachments/assets/ce30ec0c-df9c-4502-b898-c4f5e65fd44a)
+
+Fast route guide present in openlane/designs/picorv32a/runs/16-02_07-04/tmp/routing directory
+![1000013696](https://github.com/user-attachments/assets/602948ba-5339-42e4-bf22-6036a127f897)
+
+**Detailed routing using Triton-route**
+
+The current def file should be in pdn stage and set the ROUTING_STRATEGY should be 0 and then run the command run_routing.
+![1000013699](https://github.com/user-attachments/assets/18d97f1a-981a-4749-b52c-a66f4a2db299)
+![1000013687](https://github.com/user-attachments/assets/60bb8c07-968e-45ca-991a-d33295203395)
+
+The spef file is extracted using following command shown below :
+![1000013700](https://github.com/user-attachments/assets/a7a99aaf-3d78-4632-a72d-3f204ffad8a4)
+![1000013701](https://github.com/user-attachments/assets/be050ec8-60c6-4ae4-8c75-16c867b5b787)
+
+**Post-route STA analysis**
+
+Commands used to get min/max slacks for hold and setup analysis:
+![1000013702](https://github.com/user-attachments/assets/d0c8e972-4714-4635-9e42-8d31eb7733fd)
+
+• Hold slack is Met
+![1000013703](https://github.com/user-attachments/assets/a39065bf-72f5-4aae-bce6-3db78704f787)
+
+• Setup slack is Met
+![1000013704](https://github.com/user-attachments/assets/73563b2f-bf8f-4543-a511-77f75f8e4f4b)
 
