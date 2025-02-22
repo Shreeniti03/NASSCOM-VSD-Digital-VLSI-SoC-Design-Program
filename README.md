@@ -194,7 +194,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 The power distribution network layout is shown below
 ![1000013693](https://github.com/user-attachments/assets/ce30ec0c-df9c-4502-b898-c4f5e65fd44a)
 
-**Detailed routing using Triton-route**
+**•Detailed routing using Triton-route**
 
 The current def file should be in pdn stage and set the ROUTING_STRATEGY should be 0 and then run the command run_routing.
 ![1000013723](https://github.com/user-attachments/assets/8f4dc156-a4f5-4bff-8371-9d39d7e1c0a3)
@@ -205,7 +205,7 @@ The spef file is extracted using following command shown below :
 ![1000013728](https://github.com/user-attachments/assets/7381b04c-03e9-4cf0-a86e-94c16baa50da)
 
 
-**Post-route STA analysis**
+**•Post-route STA analysis**
 
 Commands used to get min/max slacks for hold and setup analysis:
 ![1000013729](https://github.com/user-attachments/assets/16ce5fad-0819-40e7-be8d-4334cf5c2559)
