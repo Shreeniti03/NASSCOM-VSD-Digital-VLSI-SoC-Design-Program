@@ -178,12 +178,5 @@ re-Placement
 •To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
-```  Commands to load PDN def in magic in another terminal
 
-```bash
-  #Change directory to path containing generated PDN def
-  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
-
-  #Command to load the PDN def in magic tool
-  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 
