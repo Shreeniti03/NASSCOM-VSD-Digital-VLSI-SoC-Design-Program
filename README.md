@@ -19,7 +19,7 @@
 ![411303043-311a83b9-1db0-4206-b8f2-ff87eb4b17fa](https://github.com/user-attachments/assets/5a019dbf-5e0d-4372-b726-45c6ec3e4072)
 ![415284160-cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc](https://github.com/user-attachments/assets/050df1ed-a8d2-438e-b891-9ec87e12a31c)
 
-# DAY 2- Good floorplan vs bad floorplan and introduction to library cells
+# DAY 2: Good floorplan vs bad floorplan and introduction to library cells
 
 °Chip Floorplanning Considerations
 
@@ -79,7 +79,7 @@ The command to view the standerd cells placement. image is shown below:
 ![de13d2ee8d7e09a155319010cd7ff4a897e730d316964b462793586e51710da6~2](https://github.com/user-attachments/assets/76d93afa-a4e4-4a12-960b-08a2a75e5977)
 ![1000013617](https://github.com/user-attachments/assets/8765979e-8f27-4623-89bd-007ad4911fe7)
 
-# Day 3 - Design library cell using Magic layout and ngspice characterization
+# Day 3: Design library cell using Magic layout and ngspice characterization
 
 Commands to open inverter layout in magic:
 
@@ -99,7 +99,17 @@ Output
 ![1000013631](https://github.com/user-attachments/assets/e6d84ef0-6900-4cbc-a33a-2f2c33a1202b)
 ![1000013622](https://github.com/user-attachments/assets/aa4f4962-5108-493d-9799-77e3e638facd)
 ![1000013623](https://github.com/user-attachments/assets/2f70f951-86ea-4ef4-b41f-e457bddf80b4)
+![1000013635](https://github.com/user-attachments/assets/73e2c916-a08a-4b74-811e-10c042f6eb76)
+![1000013636](https://github.com/user-attachments/assets/c7d11319-0e9e-42e1-a816-d9453c6ccf55)
+![1000013638](https://github.com/user-attachments/assets/c037f27d-754b-4dca-816f-cc0790200b2f)
+![1000013639](https://github.com/user-attachments/assets/d01340c5-df4a-4aff-b871-9ea7908efb51)
+![1000013641](https://github.com/user-attachments/assets/0ecee08c-5741-4ca6-a7f1-9494d441e2bb)
+![1000013642](https://github.com/user-attachments/assets/e1293913-84cf-4e87-a76a-1b3525778632)
 
-
+# Day 4: PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS
+Get the .lef file from the inverter design using command:
+•openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info
+Get the .lef file from the inverter design using command:
+![1000013643](https://github.com/user-attachments/assets/a87fb93a-3d95-4df2-8c12-a73d9377007e)
 
 
