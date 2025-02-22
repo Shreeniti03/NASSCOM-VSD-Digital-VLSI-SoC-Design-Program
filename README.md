@@ -146,22 +146,52 @@ re-Placement
 
 **post synthesis timing analysis**
 
-• A pre_STA_config.tcl file was created to analyze the synthesized netlist.
-![1000013675](https://github.com/user-attachments/assets/530aab28-03ad-4a55-9b80-94b462239d14)
+• A pre_sta_config.tcl file was created to analyze the synthesized netlist.
+![1000013672](https://github.com/user-attachments/assets/a0c08da1-6266-4df4-89c5-606dd79c7edf)
 
 • Delayed cells were replaced with larger cells, reducing slack from -26.64 to -21.85. 
-![1000013676](https://github.com/user-attachments/assets/7addb27a-51d5-4246-b26e-ee8b80fd8127)
+![1000013668](https://github.com/user-attachments/assets/ed03bf82-0a71-496b-a5b7-571cd78f4629)
 
 • The updated netlist was then overwritten in the synthesis results.
-![1000013677](https://github.com/user-attachments/assets/05be69a5-9372-4d2c-8c71-c8e1b8901e35)
 
+• Re-floorplanning and re-placement with updated netlist, followed by CTS, still resulted in slack violation of -7.63.
+
+**Timing analysis with openSTA**
+
+• OpenROAD performs STA after CTS, reading necessary files, linking with Picorv32a, setting propagated clock, and checking timing reports.
+![1000013678](https://github.com/user-attachments/assets/f6b27948-1282-4a38-a2a7-769481c4869c)
+•for min and max libraries the slack is 4.28
+
+•for typical library the slack is -5.22
+
+•after removing sky130_fd_sc_hd_clkbuffer1 for typical library the slack is -5.15
+
+•after removing sky130_fd_sc_hd_clkbuffer1 for min max libraries the slack is 3.6395 for setup and for hold is 1.9582
 ![1000013658](https://github.com/user-attachments/assets/fb160056-cf68-4bf5-bcd1-7e78d201e704)
 
+# Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA
+
+•first step is to build the power distribution network by follwing command :
+    gen_pdn
+![1000013679](https://github.com/user-attachments/assets/7d41a874-d92f-4121-96a3-e10e3a3b947b)
+![1000013680](https://github.com/user-attachments/assets/f87f4d08-6eaf-4061-a13a-8dbe4a8150c9)
+•To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+```  Commands to load PDN def in magic in another terminal
+
+```bash
+  #Change directory to path containing generated PDN def
+  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
+
+  #Command to load the PDN def in magic tool
+  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+![1000013681](https://github.com/user-attachments/assets/6f80685e-baa8-4269-84ec-33d86f6f0d2e)
+![1000013682](https://github.com/user-attachments/assets/a67cac29-b2ec-4b84-aafb-ef67ceabd4d9)
+Final step is routing to run routing use below command :
+     run_routing
 
 
+# Acknowledgement
 
-
-
-
-
-
+I'd like to thank Mr. Kunal Ghosh and Mr. Nickson Jose for their amazing guidance during the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. Their expertise in chip design was incredibly helpful and I'm grateful for their support.
