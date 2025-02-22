@@ -175,17 +175,10 @@ re-Placement
     gen_pdn
 ![1000013679](https://github.com/user-attachments/assets/7d41a874-d92f-4121-96a3-e10e3a3b947b)
 ![1000013680](https://github.com/user-attachments/assets/f87f4d08-6eaf-4061-a13a-8dbe4a8150c9)
-•To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+•To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below command :
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
- ```Commands to load PDN def in magic in another terminal
-```bash
-  #Change directory to path containing generated PDN def
-  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
-
-  #Command to load the PDN def in magic tool
-  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
-
+ 
 ![1000013681](https://github.com/user-attachments/assets/6151356d-8a9d-490e-b8a1-85996f71b29c)
 ![1000013682](https://github.com/user-attachments/assets/731577e2-d0a2-4e19-bad2-cf728bfbd751)
 
