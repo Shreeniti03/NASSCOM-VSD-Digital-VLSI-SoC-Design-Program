@@ -1,5 +1,6 @@
 # NASSCOM-VSD-Digital-VLSI-SoC-Design-Program
 # Day 1 : Inception of open-source EDA, OpenLANE and Sky130 PDK
+
 °How to talk to computers.
 
 °SoC design and openLANE
@@ -34,7 +35,7 @@
 ![1000013492](https://github.com/user-attachments/assets/bd2e8d99-0f07-44ab-85d9-cda0b26496b7)
 ![1000013493](https://github.com/user-attachments/assets/eb57f139-6c95-4b43-b02a-59be120fb927)
 
-**UTILIZATION FACTOR AND ASPECT RATIO**
+**• UTILIZATION FACTOR AND ASPECT RATIO**
 
 In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas. Formula is given by:
 
@@ -122,12 +123,12 @@ Get the .lef file from the inverter design using command:
 The track info is shown below:
 ![1000013660](https://github.com/user-attachments/assets/193e14d2-6a93-46fc-99c3-42c891b45cf0)
 
-**steps to convert magic layout to std cell lef**
+**• Steps to convert magic layout to std cell lef**
 
 The lef file of std cell of inverter is obtained by doing write lef in tickon window
 ![1000013661](https://github.com/user-attachments/assets/fc2d9cc7-713e-43fe-aa73-8599be1c21fa)
 
-**steps to configure synthesis settings to fix slack and include vsdinv**
+**• Steps to configure synthesis settings to fix slack and include vsdinv**
 
 • After synthesizing Picorv32a, slack issues arose despite successful floorplanning and placement.
 
@@ -144,7 +145,7 @@ re-Floorplan
 re-Placement
 ![1000013667](https://github.com/user-attachments/assets/85ddd028-4fd5-4b4d-9e3c-592d98bcf575)
 
-**post synthesis timing analysis**
+**• Post synthesis timing analysis**
 
 • A pre_sta_config.tcl file was created to analyze the synthesized netlist.
 ![1000013672](https://github.com/user-attachments/assets/a0c08da1-6266-4df4-89c5-606dd79c7edf)
@@ -156,7 +157,7 @@ re-Placement
 
 • Re-floorplanning and re-placement with updated netlist, followed by CTS, still resulted in slack violation of -7.63.
 
-**Timing analysis with openSTA**
+**• Timing analysis with openSTA**
 
 • OpenROAD performs STA after CTS, reading necessary files, linking with Picorv32a, setting propagated clock, and checking timing reports.
 ![1000013678](https://github.com/user-attachments/assets/f6b27948-1282-4a38-a2a7-769481c4869c)
@@ -194,7 +195,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 The power distribution network layout is shown below
 ![1000013693](https://github.com/user-attachments/assets/ce30ec0c-df9c-4502-b898-c4f5e65fd44a)
 
-**•Detailed routing using Triton-route**
+**• Detailed routing using Triton-route**
 
 The current def file should be in pdn stage and set the ROUTING_STRATEGY should be 0 and then run the command run_routing.
 ![1000013723](https://github.com/user-attachments/assets/8f4dc156-a4f5-4bff-8371-9d39d7e1c0a3)
@@ -205,7 +206,7 @@ The spef file is extracted using following command shown below :
 ![1000013728](https://github.com/user-attachments/assets/7381b04c-03e9-4cf0-a86e-94c16baa50da)
 
 
-**•Post-route STA analysis**
+**• Post-route STA analysis**
 
 Commands used to get min/max slacks for hold and setup analysis:
 ![1000013729](https://github.com/user-attachments/assets/16ce5fad-0819-40e7-be8d-4334cf5c2559)
