@@ -127,7 +127,7 @@ The track info is shown below:
 The lef file of std cell of inverter is obtained by doing write lef in tickon window
 ![1000013661](https://github.com/user-attachments/assets/fc2d9cc7-713e-43fe-aa73-8599be1c21fa)
 
-**steps to configure synthesis settings to fix lack and include vsdinv
+**steps to configure synthesis settings to fix slack and include vsdinv**
 
 • After synthesizing Picorv32a, slack issues arose despite successful floorplanning and placement.
 
@@ -135,8 +135,26 @@ The lef file of std cell of inverter is obtained by doing write lef in tickon wi
 
 •The sky130_vsdinv.lef file was then inserted as a LEF input to help resolve the slack issues.
 
+re-Synthesis
 ![1000013662](https://github.com/user-attachments/assets/1daf3999-423b-4623-aba2-50d6284ef0b8)
+
+re-Floorplan
 ![1000013663](https://github.com/user-attachments/assets/1f087063-ab38-441d-8452-215a50b19e03)
+
+re-Placement
+![1000013667](https://github.com/user-attachments/assets/85ddd028-4fd5-4b4d-9e3c-592d98bcf575)
+
+**post synthesis timing analysis**
+
+• A pre_STA_config.tcl file was created to analyze the synthesized netlist.
+![1000013675](https://github.com/user-attachments/assets/530aab28-03ad-4a55-9b80-94b462239d14)
+
+• Delayed cells were replaced with larger cells, reducing slack from -26.64 to -21.85. 
+![1000013676](https://github.com/user-attachments/assets/7addb27a-51d5-4246-b26e-ee8b80fd8127)
+
+• The updated netlist was then overwritten in the synthesis results.
+![1000013677](https://github.com/user-attachments/assets/05be69a5-9372-4d2c-8c71-c8e1b8901e35)
+
 ![1000013658](https://github.com/user-attachments/assets/fb160056-cf68-4bf5-bcd1-7e78d201e704)
 
 
