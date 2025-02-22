@@ -22,8 +22,11 @@
 # DAY 2- Good floorplan vs bad floorplan and introduction to library cells
 
 °Chip Floorplanning Considerations
+
 °Library winding and placement
+
 °Cell design and characterization flows
+
 °General timing characterization parameters
 
 ![1000013490](https://github.com/user-attachments/assets/d471fe0f-8377-4840-85e3-da51cfbefcd9)
@@ -80,6 +83,8 @@ The command to view the standerd cells placement. image is shown below:
 
 Commands to open inverter layout in magic:
 
+•magic -T sky130A.tech sky130_inv.mag &
+
 ![1000013508](https://github.com/user-attachments/assets/0a0aeaa4-8a57-476e-a9b4-db0c4efe082d)
 CMOS inverter layout 
 ![1000013509](https://github.com/user-attachments/assets/80d85222-759a-4646-bd69-be4898511be6)
@@ -89,6 +94,12 @@ PMOS
 ![1000013511](https://github.com/user-attachments/assets/c1cb2016-2511-404f-bfa6-20ccab999647)
 Output 
 ![1000013512](https://github.com/user-attachments/assets/40d3d94a-f3e2-40a7-8930-53d925dc90f9)
+
+![1000013624](https://github.com/user-attachments/assets/c2a0a59f-e3e2-4f57-9961-be0487a21e82)
+![1000013631](https://github.com/user-attachments/assets/e6d84ef0-6900-4cbc-a33a-2f2c33a1202b)
+![1000013622](https://github.com/user-attachments/assets/aa4f4962-5108-493d-9799-77e3e638facd)
+![1000013623](https://github.com/user-attachments/assets/2f70f951-86ea-4ef4-b41f-e457bddf80b4)
+
 
 
 
