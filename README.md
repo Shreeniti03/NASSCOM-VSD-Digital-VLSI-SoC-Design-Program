@@ -201,7 +201,7 @@ Fast route guide present in openlane/designs/picorv32a/runs/16-02_07-04/tmp/rout
 
 The current def file should be in pdn stage and set the ROUTING_STRATEGY should be 0 and then run the command run_routing.
 ![1000013723](https://github.com/user-attachments/assets/8f4dc156-a4f5-4bff-8371-9d39d7e1c0a3)
-![1000013687](https://github.com/user-attachments/assets/f1052aef-e1d8-4cb4-80f1-3d52bab8b9a8)
+![1000013742](https://github.com/user-attachments/assets/c1c6ed0a-ad46-41ba-af8f-adb3adb1e713)
 
 The spef file is extracted using following command shown below :
 ![1000013724](https://github.com/user-attachments/assets/70282dac-d008-4a42-9493-7dd9b21d5d73)
@@ -221,4 +221,6 @@ Commands used to get min/max slacks for hold and setup analysis:
 • Setup slack is Met
 ![1000013731](https://github.com/user-attachments/assets/582b9726-6600-4669-b09d-c05d5b339c81)
 
+# Acknowledgement 
 
+I'd like to thank Mr. Kunal Ghosh and Mr. Nickson Jose for their amazing guidance during the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING workshop. Their expertise in chip design was incredibly helpful and I'm grateful for their support.
