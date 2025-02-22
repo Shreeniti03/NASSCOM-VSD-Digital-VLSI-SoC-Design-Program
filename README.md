@@ -186,7 +186,4 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
   #Command to load the PDN def in magic tool
   magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 
-![1000013681](https://github.com/user-attachments/assets/6f80685e-baa8-4269-84ec-33d86f6f0d2e)
-![1000013682](https://github.com/user-attachments/assets/a67cac29-b2ec-4b84-aafb-ef67ceabd4d9)
-Final step is routing to run routing use below command :
-     run_routing
+
