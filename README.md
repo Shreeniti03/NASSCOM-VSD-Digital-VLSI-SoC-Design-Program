@@ -111,5 +111,18 @@ Get the .lef file from the inverter design using command:
 •openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info
 Get the .lef file from the inverter design using command:
 ![1000013643](https://github.com/user-attachments/assets/a87fb93a-3d95-4df2-8c12-a73d9377007e)
+![1000013659](https://github.com/user-attachments/assets/4b821d99-41d9-43f8-80be-19601dc3f7cd)
+![1000013660](https://github.com/user-attachments/assets/193e14d2-6a93-46fc-99c3-42c891b45cf0)
+![1000013661](https://github.com/user-attachments/assets/fc2d9cc7-713e-43fe-aa73-8599be1c21fa)
+![1000013662](https://github.com/user-attachments/assets/1daf3999-423b-4623-aba2-50d6284ef0b8)
+![1000013663](https://github.com/user-attachments/assets/1f087063-ab38-441d-8452-215a50b19e03)
+![1000013658](https://github.com/user-attachments/assets/fb160056-cf68-4bf5-bcd1-7e78d201e704)
+
+
+
+
+
+
+
 
 
