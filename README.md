@@ -178,24 +178,28 @@ re-Placement
 •To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+ ```Commands to load PDN def in magic in another terminal
+```bash
+  #Change directory to path containing generated PDN def
+  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
+
+  #Command to load the PDN def in magic tool
+  magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
 
 ![1000013681](https://github.com/user-attachments/assets/6151356d-8a9d-490e-b8a1-85996f71b29c)
 ![1000013682](https://github.com/user-attachments/assets/731577e2-d0a2-4e19-bad2-cf728bfbd751)
 
-Final step is routing to run routing use below command :
+•Final step is routing to run routing use below command :
      run_routing
 ![1000013680](https://github.com/user-attachments/assets/2a684f67-09dc-4ab6-b012-f8fa5e79947e)
 
-To view the final design with routing in Magic tool , go to the results/routing/ in the runs folder of openlane directory by using below command :
+•To view the final design with routing in Magic tool , go to the results/routing/ in the runs folder of openlane directory by using below command :
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
 
 ![1000013683](https://github.com/user-attachments/assets/7cbb875b-10ae-483f-abdf-4ac75ef3a162)
 The power distribution network layout is shown below
 ![1000013693](https://github.com/user-attachments/assets/ce30ec0c-df9c-4502-b898-c4f5e65fd44a)
-
-Fast route guide present in openlane/designs/picorv32a/runs/16-02_07-04/tmp/routing directory
-![1000013696](https://github.com/user-attachments/assets/602948ba-5339-42e4-bf22-6036a127f897)
 
 **Detailed routing using Triton-route**
 
